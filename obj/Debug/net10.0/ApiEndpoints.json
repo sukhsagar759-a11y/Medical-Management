@@ -1,0 +1,5585 @@
+[
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AuthController",
+    "Method": "Logout",
+    "RelativePath": "api/auth/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AuthController",
+    "Method": "Me",
+    "RelativePath": "api/auth/me",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AuthController",
+    "Method": "Validate",
+    "RelativePath": "api/auth/validate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.Auth.Requests.ValidateTokenRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "VoidEntry",
+    "RelativePath": "api/v1/account-receivable/AccountRcv_delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "accountRcvId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "modifiedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "AccountReceivableBatchPaymentsDestroy",
+    "RelativePath": "api/v1/account-receivable/AccountReceivableBatchPayments_Destroy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accountRcvId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "modifiedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "AccountReceivableBatchPaymentsRead",
+    "RelativePath": "api/v1/account-receivable/AccountReceivableBatchPayments_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "batchId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.AccountReceivable.Dtos.AccountReceivableBatchDetailsDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "AccountReceivableBatchPaymentsUpdate",
+    "RelativePath": "api/v1/account-receivable/AccountReceivableBatchPayments_Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.AccountReceivable.Requests.UpsertBatchPaymentRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "Accounts",
+    "RelativePath": "api/v1/account-receivable/Accounts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.AccountReceivable.Requests.SaveBatchRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.AccountReceivable.Responses.BatchOperationResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "Accounts",
+    "RelativePath": "api/v1/account-receivable/Accounts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "AddAccountReceivableGridviewvalue",
+    "RelativePath": "api/v1/account-receivable/AddAccountReceivableGridviewvalue",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.AccountReceivable.Requests.AddAccountReceivableGridRowRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "AdjustmentCodeRead",
+    "RelativePath": "api/v1/account-receivable/AdjustmentCode_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.AccountReceivable.Dtos.AdjustmentCodeDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "ArTransactionsRead",
+    "RelativePath": "api/v1/account-receivable/ARTransactions_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "invoiceNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.AccountReceivable.Dtos.AccountReceivableLedgerItemDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "Create",
+    "RelativePath": "api/v1/account-receivable/entries",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.AccountReceivable.Requests.UpsertAccountReceivableRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "invoiceNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "Update",
+    "RelativePath": "api/v1/account-receivable/entries/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.AccountReceivable.Requests.UpsertAccountReceivableRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "invoiceNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "VoidEntry",
+    "RelativePath": "api/v1/account-receivable/entries/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      },
+      {
+        "Name": "accountRcvId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "modifiedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "GetAmountDueDetailsByInvoice",
+    "RelativePath": "api/v1/account-receivable/GetAmountDueDetailsByInvoice",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.AccountReceivable.Dtos.AccountReceivableAmountDueDetailsDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "GetBatchDetals",
+    "RelativePath": "api/v1/account-receivable/GetBatchDetals",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "batchNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.AccountReceivable.Dtos.AccountReceivableBatchDetailsDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "GetBatchNoByPartialSearch",
+    "RelativePath": "api/v1/account-receivable/GetBatchNoByPartialSearch",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchValue",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.AccountReceivable.Dtos.AccountReceivableBatchLookupDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "GetInvoiceDeatilsRead",
+    "RelativePath": "api/v1/account-receivable/GetInvoiceDeatils_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "vendorInvoiceNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "claimantId",
+        "Type": "System.Nullable\u00601[[System.Int64, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.AccountReceivable.Dtos.ProfitabilitySearchItemDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "GetTotalCharges",
+    "RelativePath": "api/v1/account-receivable/GetTotalCharges",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vendorInvoiceNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Decimal",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "GetVendorInvoiceNumberList",
+    "RelativePath": "api/v1/account-receivable/GetVendorInvoiceNumberList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.AccountReceivable.Dtos.ProfitabilitySearchItemDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "SearchInvoices",
+    "RelativePath": "api/v1/account-receivable/invoices",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "invoiceLike",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "invoiceNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.AccountReceivable.Dtos.AccountReceivableInvoiceOptionDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "GetByInvoice",
+    "RelativePath": "api/v1/account-receivable/invoices/{invoiceNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "invoiceNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.AccountReceivable.Dtos.AccountReceivableLedgerItemDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "GetAmountDueDetailsByInvoice",
+    "RelativePath": "api/v1/account-receivable/invoices/{invoiceNumber}/amount-due",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "invoiceNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.AccountReceivable.Dtos.AccountReceivableAmountDueDetailsDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "SearchInvoices",
+    "RelativePath": "api/v1/account-receivable/InvoicesList_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "invoiceLike",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "invoiceNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.AccountReceivable.Dtos.AccountReceivableInvoiceOptionDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "Preview",
+    "RelativePath": "api/v1/account-receivable/parity/preview",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.AccountReceivable.Requests.AccountReceivableParityPreviewRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.AccountReceivable.Responses.AccountReceivableParityPreviewResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "PrintArBatchReport",
+    "RelativePath": "api/v1/account-receivable/PrintARBatchReport",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "batchId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "ProfitabilitySearch",
+    "RelativePath": "api/v1/account-receivable/ProfitabilitySearch",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "ProfitabilitySearchCreate",
+    "RelativePath": "api/v1/account-receivable/ProfitabilitySearch_Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.AccountReceivable.Requests.UpsertProfitabilityRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.AccountReceivable.Dtos.ProfitabilitySearchItemDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "ProfitabilitySearchDelete",
+    "RelativePath": "api/v1/account-receivable/ProfitabilitySearch_Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.AccountReceivable.Requests.DeleteProfitabilityRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "ProfitabilitySearchUpdate",
+    "RelativePath": "api/v1/account-receivable/ProfitabilitySearch_Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.AccountReceivable.Requests.UpsertProfitabilityRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.AccountReceivable.Dtos.ProfitabilitySearchItemDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "GetSummary",
+    "RelativePath": "api/v1/account-receivable/summary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.AccountReceivable.Dtos.AccountReceivableSummaryDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "TransactionTypeRead",
+    "RelativePath": "api/v1/account-receivable/TransactionType_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.AccountReceivable.Dtos.TransactionTypeOptionDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AccountReceivableController",
+    "Method": "UploadDocumentFile",
+    "RelativePath": "api/v1/account-receivable/UploadDocumentFile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentDisposition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Headers",
+        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.AccountReceivable.Responses.FileUploadResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AuthController",
+    "Method": "Authenticate",
+    "RelativePath": "api/v1/auth/authenticate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.Auth.Requests.AuthenticateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AuthController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/v1/auth/change-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.Auth.Requests.ChangePasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AuthController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/v1/auth/forgot-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.Auth.Requests.ForgotPasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AuthController",
+    "Method": "IssueSsoCookie",
+    "RelativePath": "api/v1/auth/issue-sso-cookie",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.Auth.Requests.IssueSsoCookieRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AuthController",
+    "Method": "Logout",
+    "RelativePath": "api/v1/auth/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AuthController",
+    "Method": "Me",
+    "RelativePath": "api/v1/auth/me",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AuthController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/v1/auth/reset-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.Auth.Requests.ResetPasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AuthController",
+    "Method": "Validate",
+    "RelativePath": "api/v1/auth/validate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.Auth.Requests.ValidateTokenRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.AuthController",
+    "Method": "ValidateForgotPasswordToken",
+    "RelativePath": "api/v1/auth/validate-forgot-password-token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.Auth.Requests.ValidateForgotPasswordTokenRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.BillingController",
+    "Method": "PreviewParity",
+    "RelativePath": "api/v1/billing/parity/preview",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.Billing.Requests.BillingParityPreviewRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Billing.Responses.BillingParityPreviewResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.BillingController",
+    "Method": "GetSummary",
+    "RelativePath": "api/v1/billing/summary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Billing.Dtos.BillingSummaryDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.BillingController",
+    "Method": "UpdateTransportationStatus",
+    "RelativePath": "api/v1/billing/transportation/{billingTransportationId}/status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "billingTransportationId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.Billing.Requests.UpdateBillingStatusRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.HealthController",
+    "Method": "Get",
+    "RelativePath": "api/v1/health",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Common.Responses.HealthResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "AddCarrierChild_Create",
+    "RelativePath": "api/v1/manage/AddCarrierChild_Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.CarrierParentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.CarrierParentDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "AddChargeCodeDetails",
+    "RelativePath": "api/v1/manage/AddChargeCodeDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.CarrierParentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.CarrierParentDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "AddCompany_Create",
+    "RelativePath": "api/v1/manage/AddCompany_Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.CompanyDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "AddFeeScheduleValue",
+    "RelativePath": "api/v1/manage/AddFeeScheduleValue",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.FeeScheduleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.FeeScheduleDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "AddGridViewValue",
+    "RelativePath": "api/v1/manage/AddGridViewValue",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addContractRateInfo",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.PayersContractRateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.PayersContractRateDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Adjuster",
+    "RelativePath": "api/v1/manage/Adjuster",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Adjuster_Create",
+    "RelativePath": "api/v1/manage/Adjuster_Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.AdjusterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.AdjusterDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Adjuster_Destroy",
+    "RelativePath": "api/v1/manage/Adjuster_Destroy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.AdjusterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Adjuster_Read",
+    "RelativePath": "api/v1/manage/Adjuster_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "AdjusterFirstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AdjusterLastName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CarrierParent",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Salesperson",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.AdjusterDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Adjuster_Update",
+    "RelativePath": "api/v1/manage/Adjuster_Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.AdjusterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.AdjusterDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "AdjusterCodeExists",
+    "RelativePath": "api/v1/manage/AdjusterCodeExists",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "AdjusterCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "AdjusterFirstName_Read",
+    "RelativePath": "api/v1/manage/AdjusterFirstName_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchValue",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ManageListItemDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "AdjusterLastName_Read",
+    "RelativePath": "api/v1/manage/AdjusterLastName_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchValue",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ManageListItemDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "AllParenBranch_Read",
+    "RelativePath": "api/v1/manage/AllParenBranch_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IsParent",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsBranch",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.SupplierDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "AllServiceTypes_Read",
+    "RelativePath": "api/v1/manage/AllServiceTypes_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "departmentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ServiceTypeLookupDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "AllSupplier_Read",
+    "RelativePath": "api/v1/manage/AllSupplier_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "parentSearchValue",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "branchSearchValue",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "contractingEntityId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "parentid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ManageListItemDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "BillingRegions_Create",
+    "RelativePath": "api/v1/manage/BillingRegions_Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Requests.CreateBillingRegionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "BillingRegions_Read",
+    "RelativePath": "api/v1/manage/BillingRegions_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.BillingRegionsDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "BranchAddress_Read",
+    "RelativePath": "api/v1/manage/BranchAddress_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchValue",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ManageListItemDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "BranchSupplierCollapse_Read",
+    "RelativePath": "api/v1/manage/BranchSupplierCollapse_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContractingEntityId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SupplierId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ParentId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SupplierIdCollapse",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.SupplierDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Carrier",
+    "RelativePath": "api/v1/manage/Carrier",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "CarrierChild_Create",
+    "RelativePath": "api/v1/manage/CarrierChild_Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.CarrierParentDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.CarrierParentDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "CarrierChild_Destroy",
+    "RelativePath": "api/v1/manage/CarrierChild_Destroy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.CarrierParentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "CarrierChild_Read",
+    "RelativePath": "api/v1/manage/CarrierChild_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "parentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.CarrierParentDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "CarrierChild_Update",
+    "RelativePath": "api/v1/manage/CarrierChild_Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.CarrierParentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.CarrierParentDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "CarrierParent_Create",
+    "RelativePath": "api/v1/manage/CarrierParent_Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.CarrierParentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.CarrierParentDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "CarrierParent_Destroy",
+    "RelativePath": "api/v1/manage/CarrierParent_Destroy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.CarrierParentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "CarrierParent_Read",
+    "RelativePath": "api/v1/manage/CarrierParent_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.CarrierParentDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "CarrierParent_Update",
+    "RelativePath": "api/v1/manage/CarrierParent_Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.CarrierParentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.CarrierParentDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ChargeCode_Destroy",
+    "RelativePath": "api/v1/manage/ChargeCode_Destroy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.CarrierParentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ChargeCode_Update",
+    "RelativePath": "api/v1/manage/ChargeCode_Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.CarrierParentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ChargeCodeDetails_Read",
+    "RelativePath": "api/v1/manage/ChargeCodeDetails_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payerId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.CarrierParentDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ChargeCodeExists",
+    "RelativePath": "api/v1/manage/ChargeCodeExists",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chargeCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "carrierParentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "jurisdiction",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EffectiveFrom",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "rates",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ChargeCodeHistory_Read",
+    "RelativePath": "api/v1/manage/ChargeCodeHistory_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payerId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "chargeCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "department",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.FeeScheduleDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ChildCodeExists",
+    "RelativePath": "api/v1/manage/ChildCodeExists",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "childCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "CommonBillingEnableDisable_Read",
+    "RelativePath": "api/v1/manage/CommonBillingEnableDisable_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "supplierId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "ProviderType",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "UpsertCompany",
+    "RelativePath": "api/v1/manage/companies/{companyId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "companyId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Requests.UpsertCompanyRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Company",
+    "RelativePath": "api/v1/manage/Company",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Company_Create",
+    "RelativePath": "api/v1/manage/Company_Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.CompanyDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.CompanyDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Company_Destroy",
+    "RelativePath": "api/v1/manage/Company_Destroy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.CompanyDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Company_Read",
+    "RelativePath": "api/v1/manage/Company_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.CompanyDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Company_Update",
+    "RelativePath": "api/v1/manage/Company_Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.CompanyDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.CompanyDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "CompanyCodeExists",
+    "RelativePath": "api/v1/manage/CompanyCodeExists",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "companyCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ContractingEntitySupplierCollapse_Read",
+    "RelativePath": "api/v1/manage/ContractingEntitySupplierCollapse_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContractingEntityId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SupplierId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ParentId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.SupplierDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "County_Read",
+    "RelativePath": "api/v1/manage/County_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchValue",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ManageListItemDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "UpsertCptCode",
+    "RelativePath": "api/v1/manage/cpt-codes/{cptCodeId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cptCodeId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Requests.UpsertCptCodeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "DiscountType_Read",
+    "RelativePath": "api/v1/manage/DiscountType_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ManageListItemDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "DownloadExportProviderRatesCompIQReports",
+    "RelativePath": "api/v1/manage/DownloadExportProviderRatesCompIQReports",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ExportProviderRatesCompiqExcelAndUpload",
+    "RelativePath": "api/v1/manage/ExportProviderRatesCompiqExcelAndUpload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "FeeSchedule_Destroy",
+    "RelativePath": "api/v1/manage/FeeSchedule_Destroy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.FeeScheduleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "FeeSchedule_Read",
+    "RelativePath": "api/v1/manage/FeeSchedule_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payerId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.FeeScheduleDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "FeeSchedule_Update",
+    "RelativePath": "api/v1/manage/FeeSchedule_Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.FeeScheduleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "GenerateCIQUploadExcel",
+    "RelativePath": "api/v1/manage/GenerateCIQUploadExcel",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "selectedData",
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ProviderContractedRatesDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "GetAllSupplierBranchCount",
+    "RelativePath": "api/v1/manage/GetAllSupplierBranchCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "parentId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "vendorName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "vendorAddress",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "department",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "zip",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "city",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "state",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "county",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fax",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "vendorStatus",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "radius",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Branchadress",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "providerStatus",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "GetChargeCodeDetails",
+    "RelativePath": "api/v1/manage/GetChargeCodeDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payerId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "departmentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "searchValue",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ChargeCodeLookupDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "GetCompanyEditor",
+    "RelativePath": "api/v1/manage/GetCompanyEditor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "GetDepartmentIDofSupplier",
+    "RelativePath": "api/v1/manage/GetDepartmentIDofSupplier",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SupplierId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "GetSupplierActiveBranchCount",
+    "RelativePath": "api/v1/manage/GetSupplierActiveBranchCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SupplierId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "GetSupplierBranchCount",
+    "RelativePath": "api/v1/manage/GetSupplierBranchCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "parentId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "vendorName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "vendorAddress",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "department",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "zip",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "city",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "state",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "county",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fax",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "vendorStatus",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "radius",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Branchadress",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "IsBillingRegionExists",
+    "RelativePath": "api/v1/manage/IsBillingRegionExists",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "regionName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "LoadCarrierChildDtails",
+    "RelativePath": "api/v1/manage/LoadCarrierChildDtails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "parentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.CarrierParentDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Nurse",
+    "RelativePath": "api/v1/manage/Nurse",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Nurse_Create",
+    "RelativePath": "api/v1/manage/Nurse_Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.NurseDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.NurseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Nurse_Destroy",
+    "RelativePath": "api/v1/manage/Nurse_Destroy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.NurseDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Nurse_Read",
+    "RelativePath": "api/v1/manage/Nurse_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NurseFirstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NurseLastName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ComapnyName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Salesperson",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.NurseDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Nurse_Update",
+    "RelativePath": "api/v1/manage/Nurse_Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.NurseDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.NurseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "NurseFirstName_Read",
+    "RelativePath": "api/v1/manage/NurseFirstName_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchValue",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ManageListItemDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "NurseLastName_Read",
+    "RelativePath": "api/v1/manage/NurseLastName_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchValue",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ManageListItemDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ParentCodeExists",
+    "RelativePath": "api/v1/manage/ParentCodeExists",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "parentCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ParentSupplier_Read",
+    "RelativePath": "api/v1/manage/ParentSupplier_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vendorName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "vendorAddress",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "department",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "zip",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "city",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "state",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "county",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fax",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "vendorStatus",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "radius",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "vendorQueue",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "providerStatus",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubSpecialty",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Branchadress",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContractingEntity",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubSpecialtyId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.SupplierDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ParentSupplierBranch_Read",
+    "RelativePath": "api/v1/manage/ParentSupplierBranch_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vendorName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "vendorAddress",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "department",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "zip",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "city",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "state",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "county",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fax",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "vendorStatus",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "radius",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "vendorQueue",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "providerStatus",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubSpecialty",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Branchadress",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContractingEntity",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubSpecialtyId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "vendorBranchesShow",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "vendorContractingEntityShow",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "InternalProid",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "tin",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.SupplierDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ParentSupplierCollapse_Read",
+    "RelativePath": "api/v1/manage/ParentSupplierCollapse_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContractingEntityId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SupplierId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ParentId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SupplierIdCollapse",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.SupplierDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Preview",
+    "RelativePath": "api/v1/manage/parity/preview",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Requests.ManageParityPreviewRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Manage.Responses.ManageParityPreviewResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Physician",
+    "RelativePath": "api/v1/manage/Physician",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Physician_Read",
+    "RelativePath": "api/v1/manage/Physician_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.PhysicianDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "PointsTo_Read",
+    "RelativePath": "api/v1/manage/PointsTo_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "departmentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.PointsToLookupDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ProviderContractedRates_Create",
+    "RelativePath": "api/v1/manage/ProviderContractedRates_Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.ProviderContractedRatesDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ProviderContractedRates_Destroy",
+    "RelativePath": "api/v1/manage/ProviderContractedRates_Destroy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.ProviderContractedRatesDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ProviderContractedRates_Read",
+    "RelativePath": "api/v1/manage/ProviderContractedRates_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "startDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "departmentId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subspecialtyId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "contractingEntityId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "supplierId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "jurisdiction",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "cptCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "InternalProid",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "VendorContractingEntityShow",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "VendorParentShow",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "txtProvider",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ExternalId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "TinId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fromDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "toDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ProviderContractedRatesDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ProviderContractedRates_update",
+    "RelativePath": "api/v1/manage/ProviderContractedRates_update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.ProviderContractedRatesDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ProviderDuplicateOrNot",
+    "RelativePath": "api/v1/manage/ProviderDuplicateOrNot",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "providername",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "adress",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "zip",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "supplierid",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ProviderParent_Exists",
+    "RelativePath": "api/v1/manage/ProviderParent_Exists",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.ProviderContractedRatesDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ProviderRatesCompIQExport",
+    "RelativePath": "api/v1/manage/ProviderRatesCompIQExport",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "startDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "departmentId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subspecialtyId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "contractingEntityId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "supplierId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "jurisdiction",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "cptCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "InternalProid",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "VendorContractingEntityShow",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "VendorParentShow",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "txtProvider",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ExternalId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "TinId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fromDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "toDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "selectedData",
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ProviderContractedRatesDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ProviderContractedRatesCompIQExportDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ProviderRatesExportExcel",
+    "RelativePath": "api/v1/manage/ProviderRatesExportExcel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "startDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "departmentId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subspecialtyId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "contractingEntityId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "supplierId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "jurisdiction",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "cptCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "InternalProid",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "VendorContractingEntityShow",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "VendorParentShow",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "txtProvider",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ExternalId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "TinId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fromDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "toDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ProviderContractedRatesExportDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ProviderRatesSampleFile",
+    "RelativePath": "api/v1/manage/ProviderRatesSampleFile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ProviderRatesStatus_Read",
+    "RelativePath": "api/v1/manage/ProviderRatesStatus_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "supplierId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "ProviderType",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ProviderContractedRatesDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ProviderStatusRead",
+    "RelativePath": "api/v1/manage/ProviderStatusRead",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ManageStatusLookupDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ProviderStatusReader",
+    "RelativePath": "api/v1/manage/ProviderStatusReader",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ManageStatusLookupDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "UpsertRole",
+    "RelativePath": "api/v1/manage/roles/{roleId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Requests.UpsertRoleRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "GetRolePermissions",
+    "RelativePath": "api/v1/manage/roles/{roleId}/permissions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ManagePermissionDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ServiceType_Read",
+    "RelativePath": "api/v1/manage/ServiceType_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "departmentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ServiceTypeLookupDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "GetSummary",
+    "RelativePath": "api/v1/manage/summary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.ManageSummaryDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Supplier",
+    "RelativePath": "api/v1/manage/Supplier",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Supplier_Create",
+    "RelativePath": "api/v1/manage/Supplier_Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.SupplierDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "pageName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.SupplierDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Supplier_Create_Copy",
+    "RelativePath": "api/v1/manage/Supplier_Create_Copy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.SupplierDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "pageName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.SupplierDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Supplier_Destroy",
+    "RelativePath": "api/v1/manage/Supplier_Destroy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.SupplierDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.SupplierDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Supplier_Get",
+    "RelativePath": "api/v1/manage/Supplier_Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.SupplierDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Supplier_Read",
+    "RelativePath": "api/v1/manage/Supplier_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "parentId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "vendorName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "vendorAddress",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "department",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "zip",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "city",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "state",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "county",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fax",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "vendorStatus",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "radius",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Branchadress",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.SupplierDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Supplier_Update",
+    "RelativePath": "api/v1/manage/Supplier_Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.SupplierDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.SupplierDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Supplier_Update_Copy",
+    "RelativePath": "api/v1/manage/Supplier_Update_Copy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.SupplierDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.SupplierDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "UpdateParentCommonBilling",
+    "RelativePath": "api/v1/manage/UpdateParentCommonBilling",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "supplierId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "ProviderType",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "ValidateChargeCode",
+    "RelativePath": "api/v1/manage/ValidateChargeCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chargeCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "carrierParentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "department",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "Vendor_Read",
+    "RelativePath": "api/v1/manage/Vendor_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchValue",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "contractingEntityId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "providerStatus",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "departmentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ManageListItemDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "VendorAddress_Read",
+    "RelativePath": "api/v1/manage/VendorAddress_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchValue",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ManageListItemDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "VendorCity_Read",
+    "RelativePath": "api/v1/manage/VendorCity_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchValue",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ManageListItemDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "VendorDocument_Destroy",
+    "RelativePath": "api/v1/manage/VendorDocument_Destroy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.DocumentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "VendorDocument_Save",
+    "RelativePath": "api/v1/manage/VendorDocument_Save",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Manage.Dtos.DocumentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "VendorDocuments_Read",
+    "RelativePath": "api/v1/manage/VendorDocuments_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vendorId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.DocumentDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "VendorDocumentUploadTypes_Read",
+    "RelativePath": "api/v1/manage/VendorDocumentUploadTypes_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ManageListItemDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.ManageController",
+    "Method": "VendorStatus_Read",
+    "RelativePath": "api/v1/manage/VendorStatus_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ManageStatusLookupDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.NavigationController",
+    "Method": "GetMenu",
+    "RelativePath": "api/v1/navigation/menu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SampleController",
+    "Method": "Secure",
+    "RelativePath": "api/v1/sample/secure",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Common.Responses.SecureMessageResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SampleController",
+    "Method": "IssueSampleToken",
+    "RelativePath": "api/v1/sample/token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "UpdateStatus",
+    "RelativePath": "api/v1/scheduling/{schedulingId}/status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "schedulingId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Requests.UpdateSchedulingStatusRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "Claimant",
+    "RelativePath": "api/v1/scheduling/claimant",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claimantId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Dtos.ClaimantDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "Claimant",
+    "RelativePath": "api/v1/scheduling/claimant",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Requests.SaveClaimantRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Dtos.ClaimantDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "DeleteClaimant",
+    "RelativePath": "api/v1/scheduling/claimant/{claimantId}/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claimantId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "MergeClaimant",
+    "RelativePath": "api/v1/scheduling/claimant/{claimantId}/merge/{targetClaimantId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claimantId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "targetClaimantId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Dtos.MergeClaimantDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "LoadAdjusterDtails",
+    "RelativePath": "api/v1/scheduling/claimant/adjuster/{adjusterId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "adjusterId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Dtos.AdjusterDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "LoadCarrierChildIdDtails",
+    "RelativePath": "api/v1/scheduling/claimant/carrier-child/{carrierChildId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "carrierChildId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Dtos.CarrierParentDetailsDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "ContactTypesRead",
+    "RelativePath": "api/v1/scheduling/claimant/contact-types",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ManageListItemDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "ClaimantDetails",
+    "RelativePath": "api/v1/scheduling/claimant/details",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claimantId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Dtos.ClaimantDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "GetDuplicateClaimant",
+    "RelativePath": "api/v1/scheduling/claimant/duplicate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "firstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "lastName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dateOfBirth",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "claimNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Dtos.ClaimantDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "GetICDDescription",
+    "RelativePath": "api/v1/scheduling/claimant/icd-description",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "icdType",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Dtos.IcdDescriptionDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "ClaimantList",
+    "RelativePath": "api/v1/scheduling/claimant/list",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Requests.ClaimantSearchRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Requests.ClaimantSearchRequest",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "ClaimantListRead",
+    "RelativePath": "api/v1/scheduling/claimant/list-read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claimNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "compXNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "searchBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fromDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "toDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "phone",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dateOfBirth",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Scheduling.Dtos.ClaimantSearchResultDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "ClaimantLogRead",
+    "RelativePath": "api/v1/scheduling/claimant/log-read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claimantId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Scheduling.Dtos.ClaimantLogDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "GetNurseBySearch",
+    "RelativePath": "api/v1/scheduling/claimant/nurse-search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchValue",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Scheduling.Dtos.NurseDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "LoadNurseDtails",
+    "RelativePath": "api/v1/scheduling/claimant/nurse/{nurseId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nurseId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Dtos.NurseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "GetClaimantByPartialSearch",
+    "RelativePath": "api/v1/scheduling/claimant/partial-search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "txtClaimant",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Scheduling.Dtos.ClaimantPartialSearchDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "UploadClaimant",
+    "RelativePath": "api/v1/scheduling/claimant/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentDisposition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Headers",
+        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Dtos.ClaimantDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "ClaimantList",
+    "RelativePath": "api/v1/scheduling/ClaimantList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Requests.ClaimantSearchRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Requests.ClaimantSearchRequest",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "ClaimantListRead",
+    "RelativePath": "api/v1/scheduling/ClaimantList_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claimNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "compXNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "searchBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fromDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "toDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "phone",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dateOfBirth",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Scheduling.Dtos.ClaimantSearchResultDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "ClaimantLogRead",
+    "RelativePath": "api/v1/scheduling/ClaimantLog_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claimantId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Scheduling.Dtos.ClaimantLogDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "ContactTypesRead",
+    "RelativePath": "api/v1/scheduling/ContactTypes_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ManageListItemDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "DepartmentRead",
+    "RelativePath": "api/v1/scheduling/Department_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Scheduling.Dtos.SchedulingMenuItemDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "DepartmentRead",
+    "RelativePath": "api/v1/scheduling/department/read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Scheduling.Dtos.SchedulingMenuItemDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "GetClaimantByPartialSearch",
+    "RelativePath": "api/v1/scheduling/GetClaimantByPartialSearch",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "txtClaimant",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Scheduling.Dtos.ClaimantPartialSearchDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "GetColumnPreferencesData",
+    "RelativePath": "api/v1/scheduling/GetColumnPreferencesData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "logonUser",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Dtos.OrderSearchColumnPreferencesDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "GetICDDescription",
+    "RelativePath": "api/v1/scheduling/GetICDDescription",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "icdType",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Dtos.IcdDescriptionDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "GetNurseBySearch",
+    "RelativePath": "api/v1/scheduling/GetNurseBySearch",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchValue",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Scheduling.Dtos.NurseDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "GetSchedulingOrdersByFilter_Read",
+    "RelativePath": "api/v1/scheduling/GetSchedulingOrdersByFilter_Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FromApptDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "ToApptDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Department",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ServiceType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OrderNo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Jurisdiction",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Claimant",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Provider",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ShowInactiveProviders",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Payer",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OrderStatus",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Referrar",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Scheduling.Dtos.OrderSearchRowDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "GetOrderSearchColumnPreferences",
+    "RelativePath": "api/v1/scheduling/order-search/column-preferences",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Dtos.OrderSearchColumnPreferencesDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "SaveOrderSearchColumnPreferences",
+    "RelativePath": "api/v1/scheduling/order-search/column-preferences",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "preferences",
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Dtos.OrderSearchColumnPreferencesDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Dtos.OrderSearchColumnPreferencesDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "GetColumnPreferencesData",
+    "RelativePath": "api/v1/scheduling/order-search/column-preferences/data",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "logonUser",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Dtos.OrderSearchColumnPreferencesDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "SchedulingHistory",
+    "RelativePath": "api/v1/scheduling/order-search/history",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderStatus",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "referrar",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Dtos.SchedulingHistoryScreenDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "ReadOrderStatus",
+    "RelativePath": "api/v1/scheduling/order-search/order-statuses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ManageListItemDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "GetSchedulingOrdersByFilter_Read",
+    "RelativePath": "api/v1/scheduling/order-search/orders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FromApptDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "ToApptDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Department",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ServiceType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OrderNo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Jurisdiction",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Claimant",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Provider",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ShowInactiveProviders",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Payer",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OrderStatus",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Referrar",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Scheduling.Dtos.OrderSearchRowDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "PreviewParity",
+    "RelativePath": "api/v1/scheduling/parity/preview",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Requests.SchedulingParityPreviewRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Responses.SchedulingParityPreviewResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "ReadOrderStatus",
+    "RelativePath": "api/v1/scheduling/ReadOrderStatus",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[CompX.SharedKernel.Contracts.Manage.Dtos.ManageListItemDto, CompX.SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "SchedulingHistory",
+    "RelativePath": "api/v1/scheduling/SchedulingHistory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderStatus",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "referrar",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Dtos.SchedulingHistoryScreenDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "GetSummary",
+    "RelativePath": "api/v1/scheduling/summary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Dtos.SchedulingSummaryDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CompX.Api.Controllers.V1.SchedulingController",
+    "Method": "UploadClaimant",
+    "RelativePath": "api/v1/scheduling/UploadClaimant",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentDisposition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Headers",
+        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CompX.SharedKernel.Contracts.Scheduling.Dtos.ClaimantDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
